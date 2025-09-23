@@ -1,0 +1,34 @@
+[0m12:15:11.243784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10349f1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045101c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045104f0>]}
+
+
+============================== 12:15:11.245533 | 154414c8-945f-4429-b27e-6cba90e42414 ==============================
+[0m12:15:11.245533 [info ] [MainThread]: Running with dbt=1.10.11
+[0m12:15:11.245794 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'log_path': 'logs', 'version_check': 'True', 'quiet': 'False', 'warn_error': 'None', 'log_format': 'default', 'empty': 'None', 'printer_width': '80', 'fail_fast': 'False', 'debug': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init ecommerce_demo', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'profiles_dir': '/Users/kaleab/.dbt', 'no_print': 'None'}
+[0m12:15:11.250056 [info ] [MainThread]: Creating dbt configuration folder at /Users/kaleab/.dbt
+[0m12:15:11.250765 [debug] [MainThread]: Starter project path: /Users/kaleab/Documents/ecommerce_demo/venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m12:15:11.253105 [info ] [MainThread]: 
+Your new dbt project "ecommerce_demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:15:11.253249 [info ] [MainThread]: Setting up your profile.
+[0m12:16:47.201539 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:16:47.201770 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:16:47.201896 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:02:32.686338 [info ] [MainThread]: Profile ecommerce_demo written to /Users/kaleab/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:02:32.693862 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 2172.5452, "process_in_blocks": "0", "process_kernel_time": 0.1277, "process_mem_max_rss": "194232320", "process_out_blocks": "0", "process_user_time": 1.000305}
+[0m13:02:32.695040 [debug] [MainThread]: Command `dbt init` succeeded at 13:02:32.694761 after 2172.55 seconds
+[0m13:02:32.695925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10349f1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d1dee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044eea60>]}
+[0m13:02:32.696729 [debug] [MainThread]: Flushing usage events
+[0m13:02:33.323262 [debug] [MainThread]: An error was encountered while trying to flush usage events
