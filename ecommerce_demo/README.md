@@ -1,4 +1,57 @@
-Welcome to your new dbt project!
+Welcome!
+
+# E-Commerce Demo: dbt + Databricks + GitHub Actions
+
+This repository demonstrates a simple data pipeline using **dbt**, **Databricks Free Tier**, and **GitHub Actions** automation.
+
+## Architecture
+
+                        ┌───────────────────┐
+                        │   Open Data /     │
+                        │   E-Commerce CSV  │
+                        └────────┬──────────┘
+                                 │
+                                 ▼
+                     ┌──────────────────────┐
+                     │ Databricks Free Tier │
+                     │  (DBFS / Delta Lake)│
+                     └────────┬────────────┘
+                              │
+            ┌─────────────────┴─────────────────┐
+            │                                   │
+            ▼                                   ▼
+   ┌─────────────────┐                 ┌──────────────────┐
+   │ Raw Table:      │                 │ Staging Table:   │
+   │ ecommerce_q_2_  │  ----clean----> │ stg_sales        │
+   │ q_3_sales       │                 │                  │
+   └─────────────────┘                 └──────────────────┘
+                                             │
+                                             ▼
+                             ┌───────────────────────────┐
+                             │  dbt Models / Transform   │
+                             │  - dim_customers          │
+                             │  - dim_channels           │
+                             │  - fact_sales             │
+                             └─────────────┬────────────┘
+                                           │
+                                           ▼
+                               ┌─────────────────────┐
+                               │   dbt Marts /       │
+                               │   BI-ready tables   │
+                               └─────────┬───────────┘
+                                         │
+                                         ▼
+                               ┌─────────────────────┐
+                               │ GitHub Actions CI   │
+                               │ Automated dbt run   │
+                               │ on push to main     │
+                               └─────────┬───────────┘
+                                         │
+                                         ▼
+                               ┌─────────────────────┐
+                               │ Databricks Tables   │
+                               │ Updated Automatically│
+                               └─────────────────────┘
 
 ### Using the starter project
 
