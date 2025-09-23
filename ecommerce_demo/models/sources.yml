@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: ecommerce       # source name used in your SQL
+    schema: default      # your Databricks schema (Unity Catalog schema)
+    tables:
+      - name: ecommerce_q_2_q_3_sales
+
